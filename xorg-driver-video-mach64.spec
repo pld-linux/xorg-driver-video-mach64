@@ -18,6 +18,11 @@ BuildRequires:	xorg-proto-fontsproto-devel
 BuildRequires:	xorg-proto-xf86driproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRequires:	xorg-xserver-server-devel >= 1.1.0
+# GL/glxint.h
+BuildRequires:	xorg-proto-glproto-devel
+# requested by configure script
+BuildRequires:	xorg-lib-libpciaccess-devel
+BuildRequires:	xorg-proto-xf86miscproto-devel
 %requires_xorg_xserver_videodrv
 Requires:	xorg-xserver-server >= 1.1.0
 Obsoletes:	XFree86-Mach32
