@@ -24,6 +24,8 @@ BuildRequires:	xorg-proto-glproto-devel
 BuildRequires:	xorg-lib-libpciaccess-devel
 BuildRequires:	xorg-proto-xf86miscproto-devel
 %requires_xorg_xserver_videodrv
+Requires:	xorg-xserver-libdri >= 1.1.0
+Requires:	xorg-xserver-libglx >= 1.1.0
 Requires:	xorg-xserver-server >= 1.1.0
 Obsoletes:	XFree86-Mach32
 Obsoletes:	XFree86-Mach64
