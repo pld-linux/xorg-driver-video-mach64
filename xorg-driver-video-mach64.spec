@@ -1,12 +1,12 @@
 Summary:	X.org video drivers for ATI VGAWonder/Mach32/Mach64 adapters
 Summary(pl.UTF-8):	Sterowniki obrazu X.org do kart graficznych ATI VGAWonder/Mach32/Mach64
 Name:		xorg-driver-video-mach64
-Version:	6.8.2
-Release:	6
+Version:	6.9.0
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-mach64-%{version}.tar.bz2
-# Source0-md5:	6c0522b2b72a0a47c48d718443616651
+# Source0-md5:	ae62936e11af4fc0fac9f2db601a844f
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -82,5 +82,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog README README.ati
+%doc COPYING ChangeLog README
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/mach64_drv.so
