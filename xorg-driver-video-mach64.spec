@@ -1,12 +1,12 @@
 Summary:	X.org video drivers for ATI VGAWonder/Mach32/Mach64 adapters
 Summary(pl.UTF-8):	Sterowniki obrazu X.org do kart graficznych ATI VGAWonder/Mach32/Mach64
 Name:		xorg-driver-video-mach64
-Version:	6.9.0
-Release:	4
+Version:	6.9.1
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-mach64-%{version}.tar.bz2
-# Source0-md5:	ae62936e11af4fc0fac9f2db601a844f
+# Source0-md5:	8484c18f08e77564a56ccbf226694038
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
@@ -14,7 +14,7 @@ BuildRequires:	libdrm-devel >= 2.2
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	rpmbuild(macros) >= 1.389
-BuildRequires:	xorg-lib-libpciaccess-devel >= 0.8.0
+BuildRequires:	xorg-lib-libpciaccess-devel >= 0.12.901
 BuildRequires:	xorg-proto-fontsproto-devel
 BuildRequires:	xorg-proto-glproto-devel
 BuildRequires:	xorg-proto-randrproto-devel
@@ -28,6 +28,7 @@ BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRequires:	xorg-xserver-server-devel >= 1.2
 %{?requires_xorg_xserver_videodrv}
 Requires:	libdrm >= 2.2
+Requires:	xorg-lib-libpciaccess >= 0.12.901
 Requires:	xorg-xserver-libdri >= 1.2
 Requires:	xorg-xserver-libglx >= 1.2
 Requires:	xorg-xserver-server >= 1.2
